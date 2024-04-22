@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<script>
+    function getYear() {
+        // Get the current date and time
+        var today = new Date();
+
+        // Get the current year
+        var year = today.getFullYear();
+
+        // Return the year
+        return year;
+    }
+</script>
+
+<body>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">
+                  <p>Copyright &copy; 2023&ndash;<span id="year"></span> Karnish Tapadar.</p></small>
+
+            <script>
+                // Get the current year and set it to the element with the id "year"
+                document.getElementById("year").innerHTML = getYear();
+            </script>
+
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+</body>
+
+</html>

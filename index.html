@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+
+<!-- ******HEADER IMPORT CODE START****** -->
+
+<head>
+    <title>Karnish</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Karnish's Profile">
+    <meta name="author" content="3rd Wave Media">    
+    <!-- link rel="shortcut icon" href="favicon.ico" -->
+    <link rel="shortcut icon" href="assets/myicon.png">	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <script>
+        $(function() {
+            $("#include_header").load("include_header.html");
+        });
+
+        $(function() {
+            $("#include_body").load("include_body.html");
+        });
+
+        $(function() {
+            $("#include_footer").load("include_footer.html");
+        });
+
+        $(function() {
+            $("#include_footer_scripts").load("include_footer_scripts.html");
+        });
+    </script>
+    
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedMyPopUP").load("popup.html"); 
+    });
+</script>	
+
+
+<style>
+    .gradient-line {
+        height: 3px;
+        background: linear-gradient(to right, #ff5733 0%, #3333ff 50%, #ff5733 100%);
+        background-size: 200% 100%;
+        animation: gradientAnimation 3s infinite linear;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 100% 0;
+        }
+    }
+
+    
+.reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }  
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: #FFFFFF;
+  /*background: linear-gradient(135deg, #4A00E0, #8E2DE2, #FFC837);*/
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
+    
+</style>    
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MKXQD3MXWW"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-MKXQD3MXWW');
+</script>
+
+    <div id="include_header"></div>
+    <div id="include_body"></div>
+
+</head>
+
+
+<body>
+
+    <!-- ******HEADER IMPORT CODE END****** -->
+
+    <div id="loading">	
+        <img id="loading-image" src="assets/loading.gif" alt="Loading..." width="100" height="100" />
+      </div>
+          
+
+
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner-index" id="abt">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>Hi! I am <a href="https://karnish-tapadar.github.io/" target='_blank'>Karnish Tapadar</a>, currently working as a PhD Research Scholar in the department of Computer Science and Engineering of <a href="https://www.iitg.ac.in"
+                                    target='_blank'>Indian Institute of Technology Guwahati, India</a>, under the supervision of <a href="http://manaskhatua.github.io/" target='_blank'>Dr. Manas Khatua</a>, on <b>Adaptive and secure link scheduling in 6TiSCH network for resource efficient data communication.</b>  Prior to this, I have received my M.Tech. in the department of Computer Science and Engineering at
+                                <a href="https://nitdgp.ac.in/" target='_blank'>National Institute of Technology Durgapur, India</a>, under the supervision of <a href="https://nitdgp.ac.in/department/computer-science-engineering/faculty-1/suvamoy-changder"
+                                    target='_blank'>Dr. Suvamoy Changder</a>. During my M.Tech., I worked on <b>Personality analysis using machine learning techniques and I secured the first class first position (Gold Medalist) in M.tech.</b>
+                            </p>
+
+                            <!--<p>My current research interests include Internet of Things (IoT) / Wireless Sensor Networks / Performance Evaluation of IoT Protocols.</p> -->
+
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+
+
+                </section>
+                <!--//section-->
+            </div>
+            <!--//primary-->
+
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+               <aside class="info aside section">
+                    <div class="section-inner" id="con">
+                        
+                        <h2 class="heading">Recent <img src="assets/source.gif" alt="news" width="50" height="60"></h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <p style="color:rgb(0, 110, 255)"> Journal Paper got accepted in January 2024.
+                                    <blink> </blink>
+                                </p>
+                                <p style="color:rgb(0, 110, 255)">Paper got accepted in COMSNETS 2024.
+                                    <blink> </blink>
+                                </p>
+                                <p style="color:rgb(0, 110, 255)">Paper got accepted in INDICON 2023.
+                                    <blink> </blink>
+                                </p>
+                                <!--<p style="color:blue">Joined IIT Guwahati, India on July 2021.<blink> </blink></p>-->
+                                <!--<p style="color:blue"> I have published a report on Contiki-NG, TI IoT devices, and FIT IoT-LAB<blink> <a href="https://www.researchgate.net/publication/358138446_Contiki-NG_CC2650_IoT_devices_and_FIT_IoT-LAB">&lt Link &gt</a></blink></p>-->
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    <!-- </div>-->
+                    <!--//section-inner-->
+                <!--</aside>-->
+                <!--//aside-->
+
+            </div>
+            <!--//secondary--> 
+
+            <br>	  
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-- >            
+ 
+        
+    <!-- comment, I will add when I need  
+
+
+<div class="container sections-wrapper">
+<hr>	
+<div class="row">	
+<!--Extra info starts here-->
+<!--	
+<div class="col-md-12">
+	
+	<div class="index-container">
+	                    <h4><b><font color="maroon">Research Interest</font></b></h4>
+	                    <ul class="index-list">
+	                        <li>Internet of Things</li>
+				<li>Wireless Netwroks</li>
+				<li>Performance Evaluation of IoT Protocols</li>   
+				<li>Game Theory in Computer Networks</li>
+				
+				<li>Edge Computing </li>
+	                    </ul>
+	</div>
+<hr>	
+</div>	
+-->
+<!----
+<div class="col-md-12">
+    <div class="index-container">
+        <h4><b><img src="assets/images/announcement.png" alt="announcement" style="width: 30px; height: 30px; margin-right: 5px;"> <font color="maroon">New Beginnings !!!</font></b></h4>
+        I have received an offer to join the Department of <a href="https://mnc.iitism.ac.in/">Mathematics and Computing</a> at <a href="https://www.iitism.ac.in/">IIT (ISM) Dhanbad</a> as an Assistant Professor! <br>
+	Deeply grateful to my mentors and family for their unwavering support and encouragement all along the way! <br>
+    </div>
+    <hr>  
+</div>
+--> 
+
+
+<div class="col-md-12">
+	<div class="index-container reveal">
+        	<div class="row">
+		   <div class="col-md-6">
+	                    <h4><b><font color="maroon">Research Interests</font></b></h4>
+	                    <ul class="index-list">
+	                        <li>Internet of Things (IoT)</li>
+                            <li>Performance Evaluation of IoT Protocols</li>  
+                            <li>Security-by-Design in IoT</li>
+				<li>Wireless Netwroks</li>
+
+				
+				   
+				
+	                    </ul>
+	            </div>
+	            <div class="col-md-6">
+			   <!-- <h4><b><font color="maroon">IPv6 connected IoT Network</font></b></h4> -->
+			    <img src="assets/IoT.png" alt="IoT Network" width="420" height="200" class="default-size">
+			     <style>
+				        /* Media query for mobile phones */
+				        @media only screen and (max-width: 767px) {
+				            .default-size {
+				                width: 350px; /* Adjust this value as needed */
+				            }
+				        }
+				
+				        /* Media query for tablets */
+				        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+				            .default-size {
+				                width: 420px; /* Adjust this value as needed */
+				            }
+				        }
+				
+				        /* Media query for laptops */
+				        @media only screen and (min-width: 1024px) {
+				            .default-size {
+				                width: 420px; /* Adjust this value as needed */
+				            }
+				        }
+			    </style>
+	            </div>
+		</div>
+	</div>	
+    <hr>	
+</div>	
+
+<div class="col-md-12">
+	<div class="index-container reveal">
+        	<div class="row">
+		   <div class="col-md-6">
+	                    <h4><b><font color="maroon">Education</font></b></h4>
+	                    <!-- Content for education section goes here -->
+	                    <ul class="index-list">
+	            <li>2019-Continuing: Ph.D. (CSE, Internet of Things) from IIT Guwahati, India</li>
+				<li>2018: M.Tech. (CSE) from National Institute of Technology Durgapur, India</li>
+				<li>2014: MCS from Assam University, Silchar, India</li>
+				<li>2012: BCS from Assam University, Silchar, India</li>
+				
+	                    </ul>
+	            </div>
+	            <div class="col-md-6">
+	                    <h4><b><font color="maroon">Work Experience</font></b></h4>
+	                    <!-- Content for work experience section goes here -->
+	                    <ul class="index-list">
+	                <li>2018-2018: Assistant Professor, CV Raman Engineering College, Bhubaneswar, India</li>
+				   <li>2016-2016: Junior Research Fellow, Assam University, Silchar, India</li>
+				  
+				
+				
+	                        <!-- Add more work experience entries here -->
+	                    </ul>
+	            </div>
+		</div>
+	</div>	
+<hr>	
+</div>	
+  
+
+<div class="col-md-12">
+	<div class="index-container reveal">
+        	<div class="row">
+		   <div class="col-md-6">
+	                    <h4><b><font color="maroon">Awards and Achievements </font></b></h4>
+	                    <ul class="index-list">
+				
+	 			
+				<li>Received Travel grant Award to attend COMSNETS’2024 conference from COMSNETS, 2024.</li>
+				<li>Received MHRD Scholarship for Ph.D. (2019-2023).</li>
+				<li>Qualified UGC-NET (Assistant Professor), in CS & IT discipline, 2018. </li>   
+				<li>Qualified GATE in CSE discipline, 2016. </li>   
+				<li>Secured first class first position (Gold Medalist) in M-Tech.</li>	
+				<li>Received MHRD Scholarship during M-Tech (2016-2018).</li>
+				<li>Received Merit-cum-Means scholarship during MCS from ministry of Minority. </li>
+                <li>Bagged first prize in Teaching competition conducted by Jawahar Navodaya Vidyalaya, India.</li>
+				<li>Received Participation Certificate for workshop on Pedagogy Training for Teaching & Research Excellence (SERB-INAE).</li>
+				   
+				            
+	                    </ul>
+	            </div>
+     
+                
+                <div class="col-md-12">
+                    <div class="index-container reveal">
+                            <div class="row">
+                           <div class="col-md-6">
+                                        <h4><b><font color="maroon">Professional Membership </font></b></h4>
+                                        <ul class="index-list">
+
+
+                                            <li>ACM Member since January 2022 (ID: 7262559)</li>
+                                            <li>IEEE Member since December 2024 (ID: 99681062)</li>
+
+                                                 
+	                    </ul>
+                    </div>
+
+                    <div class="col-md-6">
+	                    <h4><b><font color="maroon">Professional Services</font></b></h4>
+	                    <h5 ><b><font color="blue">Reviewer</font></b></h5>
+	                    <ul class="index-list">
+	                      
+				<li> Journal of The Institution of Engineers (India): Series B (IEIB) </li>
+				<li> IEEE Internet of Things Journal </li>
+				
+				<li> IEEE ICCINS-2023, Mylavaram, AP, India</li>   
+				
+	                    </ul>
+                <!--
+			    <h5> <b><font color="blue">Technical Program Committee Member</font></b> </h5>
+	                    <ul class="index-list">
+	                        <li> IEEE ICICSA-2023, NIT Silchar, Assam, India </li>
+				<li> IEEE PICom 2023, Special Session on Distributed Machine Learning for Edge/Fog Computing: Challenges and Future Directions </li>
+				<li> IEEE ICCINS-2023, Mylavaram, AP, India </li>
+	                    </ul>
+                    -->
+
+                    <h5> <b><font color="blue">Academic and Administrative Responsibilities</font></b> </h5>
+                    <ul class="index-list">
+                        <li>Faculty Placement Coordinator of IT Department from July -December 2018 at CV Raman Engineering College </li>
+            
+            
+                    </ul>
+			    <h5> <b><font color="blue">Volunteer</font></b> </h5>
+	                    <ul class="index-list">
+	                        <li> An active volunteer of the Women Entrepreneurship development Organised by Assam University Silchar in collaboration with National Research Development Corporation in 2012 </li>
+				  <li>An active volunteer in the North-East Winter School on "Graph Algorithms with special focus on Applications to Networks and VLSI" Organized by ISI kolkata and Assam University Silchar from February 22-24, 2016</li>
+	                    </ul>
+	            </div>
+		</div>
+	</div>	
+	<hr>	
+</div>
+
+<!--
+    <div class="col-md-12">
+	
+	<div class="index-container reveal">
+	                    <h4> <b><font color="maroon">Resource Person</font></b> </h4>
+	                    <ul class="index-list">
+	                        <li> Delivered an expert talk on "A Tutorial on 6TiSCH IoT Network", at the workshop on "Recent Trends in Information Technology, Networking, Communication and Healthcare" held in the department of CSE, Tezpur University, Assam, India, on 11-12 March, 2023. </li>
+				<li> Delivered an expert talk on "Internet of Things", for the Project based Industrial Training on Blockchain, IoT and Machine Learning using Python, jointly organized by Central Institute of Technology Kokrajhar and NIELIT Guwahati, Assam, India, on 4 August, 2022. </li>
+	                    </ul>
+	</div>
+<hr>	
+</div>
+-->
+<!-- Bootstrap JS (Optional, if needed) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Extra info ends here-->
+</div><!--//row-->
+</div><!--//masonry-->		
+    
+<!-- ******FOOTER****** -->
+
+    <div class="footer" id="include_footer"></div>
+    <div id="include_footer_scripts"></div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+
+
+    <script>
+        /*	   
+           document.addEventListener("DOMContentLoaded", function() {
+             // Simulate content loading delay
+             setTimeout(function() {
+               // Show content and hide loader after delay
+               document.querySelector('.container').classList.remove('hidden');
+               document.querySelector('.loader-container').classList.add('hidden');
+             }, 2000); // Adjust delay time as needed
+       
+             // Update progress bar
+             let progress = 0;
+             const progressBar = document.querySelector('.progress');
+       
+             const updateProgressBar = () => {
+               progress += 1;
+               progressBar.style.width = `${progress}%`;
+               if (progress < 100) {
+                 requestAnimationFrame(updateProgressBar);
+               }
+             };
+       
+             requestAnimationFrame(updateProgressBar);
+           });
+       
+       document.addEventListener("DOMContentLoaded", function() {
+                   // Simulate content loading delay
+                   setTimeout(function() {
+                       // Show content and hide loader after delay
+                       document.querySelector('.my_anim').classList.add('hidden_var');
+               var element = document.querySelector('.hello_world');
+               element.style.display = 'block';
+               element.style.top = '0';     
+                   }, 3000); // Adjust delay time as needed
+               });	 
+         */
+              
+         function reveal() {
+                   var reveals = document.querySelectorAll(".reveal");
+       
+                   for (var i = 0; i < reveals.length; i++) {
+                       var windowHeight = window.innerHeight;
+                       var elementTop = reveals[i].getBoundingClientRect().top;
+                       var elementVisible = 30;
+       
+                       if (elementTop < windowHeight - elementVisible) {
+                           reveals[i].classList.add("active");
+                       } else {
+                           reveals[i].classList.remove("active");
+                       }
+                   }
+               }
+       
+               window.addEventListener("scroll", reveal);
+      
+ </script>	
+<script>
+ $(window).on('load', function () {
+   $('#loading').hide();
+ }) 
+</script>	
+
+   <!-- Javascript -->          
+   <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+   <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+   <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+   <!-- github activity plugin -->
+   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+   <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+   <!-- custom js -->
+   <script type="text/javascript" src="assets/js/main.js"></script>   
+
+   <footer class="footer">
+    <div id="includedMyPopUP"></div>
+   </footer>	
+   
+
+</body>
+
+</html>

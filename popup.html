@@ -1,0 +1,69 @@
+
+<style>
+    /* Styling for the popup container */
+
+    .popup-container {
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        background-color: #f0f0f0;
+        /*Light professional color */
+        color: #333;
+        /* Dark text color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid blue;
+        padding: 10px;
+        z-index: 9999;
+        display: none;
+        /* Initially hidden */
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .popup-icon {
+        margin-right: 4px;
+        margin-bottom: 4px;
+        margin-left: 7px;
+        margin-top: 4px;
+    }
+</style>
+<div class="popup-container" id="popup-container">
+
+    <div class="popup-column">
+        <!-- Cat icon -->
+        <img src="assets/teamwork3.png" alt="Cat" class="cat-icon" width="50" height="50">
+        <div class="popup-text">Join Me!</div>
+        <div class="popup-icons">
+            <a href="https://www.researchgate.net/profile/Karnish_Tapadar"> <img class="popup-icon" src="assets/RG.png" width="30" height="30"> </a>
+            <a href="https://scholar.google.com/citations?user=wxZ8lXUAAAAJ&hl=en"><img class="popup-icon" src="assets/google-scholar.svg" width="30" height="30"> </a>
+             <br>
+            <a href="https://www.linkedin.com/in/karnish-tapadar-30a7bb220/"><img class="popup-icon" src="assets/linkedin.png" width="30" height="30"> </a>
+            <!--<a href="https://twitter.com/Alakesh1025"> <img class="popup-icon" src="assets/images/twitter.png" width="30" height="30"> </a>
+            
+            --> 
+            <br>
+            <a href="https://www.facebook.com/karnish.tapadar.5"> <img class="popup-icon" src="assets/facebook.png" width="30" height="30"> </a>
+            <a href="contact.html#message"> <img class="popup-icon" src="assets/mail.png" width="30" height="30"> </a>
+            <!-- Popup sound -->
+            <audio class="popup-sound" id="popup-sound" src="assets/pop_up.mp3" preload="auto"></audio>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var popupContainer = document.getElementById('popup-container');
+        var popupSound = document.getElementById('popup-sound');
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            // Show the popup container
+            popupContainer.style.display = 'flex';
+            // Play the popup sound
+            popupSound.play();
+        } else {
+            // Hide the popup container
+            popupContainer.style.display = 'none';
+        }
+    });
+</script>

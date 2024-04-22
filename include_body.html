@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- ******HEADER****** -->
+
+
+<header class="header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img class="profile-image img-responsive pull-left" src="assets\Karnish.jpeg" alt="Karnish Tapadar" width="140" height="165" />
+                <div class="profile-content pull-left">
+                    <h2 class="name">Ms. Karnish Tapadar</h2>
+                    <h5 class="desc">
+                        
+                        <img src="assets/workplace_.png" width="20" height="20"> <span style="font-size: 16px;">PhD Research Scholar</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                        <img src="assets/map.png" width="20" height="20"> <span style="font-size: 16px;">CSE, Indian Institute of Technology Guwahati</span><br>
+                        <a href="contact.html#message" style="color: maroon; font-size: 16px;">
+                            <img src="assets/message.png" width="21" height="21" alt="Email icon">
+                            Email
+                        </a><br>
+                        
+                        
+                        
+                        <!--
+                        <div><i class="fa fa-graduation-cap  fa-fw"></i> PhD Research Scholar</div>
+                        <div><i class="fa fa-institution fa-fw"></i> Indian Institute of Technology Guwahati</div>
+                        <div><i class="fa fa-envelope fa-fw"></i> karnish_nasrin@iitg.ac.in</div>
+                        <div><i class="fa fa-envelope fa-fw"></i> tapadarkarnish1011@gmail.com</div>
+                        <div><i class="fa fa-share-alt-square fa-fw">
+						 </i> | <a href="https://scholar.google.com/citations?user=wxZ8lXUAAAAJ&hl=en" target='_blank'>Google Scholar</a> |
+                            <a href="https://www.linkedin.com/in/karnish-tapadar-30a7bb220/" target='_blank'>LinkedIn</a> |
+                            <a href="https://www.researchgate.net/profile/Karnish_Tapadar" target='_blank'>ResearchGate</a> |
+                           
+                        <div><i class="fa fa-phone-square fa-fw"></i> +91 9613660938</div>
+                        <i class="fa fa-file-text"><a href='#' onclick="(window.open('https://www.overleaf.com/read/vvtrgjkqfqgh')).close(); window.open('https://www.overleaf.com/download/project/632876d163765e4cf56fd0ff/output/output.pdf?popupDownload=true');" title="Please allow popups for this download."> [Download CV]</a></i></h5>-->
+                        <!-- <div><i class="fa fa-file-text fa-fw"></i> <a href="https://www.overleaf.com/read/kfhnmvgbqwkh" target='_blank'>[Download CV]</a></div>-->
+                   
+                  
+                    </h5>
+                </div>
+                <!--//profile-->
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <nav class="navbar  navbar-static-top" role="navigation">
+                    <div class="profile-content pull-right"></div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: #178ACC;">
+						<span class="sr-only" style="background-color: white;">Toggle navigation</span>
+						<span class="icon-bar" style="background-color: white;"></span>
+						<span class="icon-bar" style="background-color: white;"></span>
+						<span class="icon-bar" style="background-color: white;"></span>
+					  </button>
+                    </div>
+                    <div class="topnav">
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html" id="current"><i class="fa fa-home"></i> Home</a></li>
+                                <!--<li><a href="publication.html"><i class="fa fa-file-text"></i> Publications</a></li> -->
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown">
+                                        <i class="fa fa-search"></i> Research
+					                <span class="caret"></span>
+                                   </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="publications.html"><i class="fa fa-file-text"></i> Publications</a></li>
+                                        <li><a href="projects.html"><i class="fa fa-folder-open"></i> Projects</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-edit"></i> Teaching
+					<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="courses.html"><i class="fa fa-book"></i> Courses</a></li>
+                                        <li><a href="students.html"><i class="fa fa-group"></i> Students</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact me</a></li>
+                            </ul>
+                </nav>
+                </div>
+                </div>
+
+
+                <br>
+                <div class="gradient-line"></div>
+           
+
+
+            </div>
+            <!--//container-->
+
+            
+</header> 
+<!--//header-->
+
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle('night-mode'); // Toggle night mode class on body
+    }
+
+    const names = [
+        "Karnish Tapadar",
+        "कार्निश तपादार ",
+        "কার্নিশ তাপাদার ",
+        "কাৰ্নিশ তাপদাৰ",
+    ];
+
+    const intro = "Ms. ";
+    let currentIndex = 0;
+    let currentLetterIndex = 0;
+    let intervalId;
+
+    function startTyping() {
+        let nameElement = document.querySelector('.name');
+        if (currentLetterIndex < names[currentIndex].length) {
+            nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex + 1);
+            currentLetterIndex++;
+        } else {
+            clearInterval(intervalId);
+            setTimeout(() => {
+                intervalId = setInterval(deleteName, 50);
+            }, 1000);
+        }
+    }
+
+    function deleteName() {
+        let nameElement = document.querySelector('.name');
+        if (currentLetterIndex > 0) {
+            nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex);
+            currentLetterIndex--;
+        } else {
+            clearInterval(intervalId);
+            currentIndex = (currentIndex + 1) % names.length;
+            currentLetterIndex = 0;
+            intervalId = setInterval(startTyping, 100);
+        }
+    }
+
+    intervalId = setInterval(startTyping, 100); // Start typing
+</script>
+
+
+
+</html>

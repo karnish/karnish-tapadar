@@ -1,0 +1,128 @@
+a{
+    text-decoration: none;
+}
+a{
+    color: #1190a2;
+}
+a:hover{
+    color: #7441ef;
+}
+.no-list{
+    list-style: none;
+    margin:  0;
+    padding: 0;
+}
+.no-list li{
+    margin:  0;
+    padding: 0;
+}
+
+.navbar{
+    background: rgba(252, 191, 163, 0.11);
+}
+
+.profile-content{
+    margin-left: -20px;
+}
+
+.profile-details{
+    display: inline-block;
+}
+.profile-photo img{
+    width: 150px;
+}
+
+.main-content{
+    padding: 100px 0;
+}
+
+.updates{
+    background: #ECF3A3;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    /*box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;*/
+    border-radius: 4px;
+}
+
+.updates li
+{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.updates li:before{
+    content: "✨";
+    margin-left: -20px;
+}
+
+footer{
+    padding: 50px 0;
+    background: rgba(142,143,144,0.55);
+}
+
+.publications{
+    background: rgba(238,231,211,0.55);
+    padding: 70px 50px;
+}
+
+.pub-section{
+    background: white;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 5px;
+}
+
+.pubs-sub{
+    padding: 20px;
+    margin: 10px;
+}
+
+.pubs-sub ul li{
+    margin: 0 0 10px 24px;
+}
+
+.pubs-sub ul li:before{
+    content: "📜";
+    margin-left: -20px;
+}
+
+.exp-acads
+{
+    padding: 50px 0px;
+    background: rgba(225, 225, 225, 0.37);
+}
+
+.acads{
+    padding: 20px 0;
+}
+
+.acads table
+{
+    margin-top:20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    overflow: hidden;
+}
+
+.acads table thead tr th {
+    padding: 10px 20px;
+    border: none;
+    background: rgba(229, 211, 152, 0.55);
+}
+.acads table td{
+    padding: 10px 20px;
+    border: none;
+    background: rgba(246,234,195,0.55);
+    /*border-bottom: solid rgba(229, 211, 152, 0.29) 1px;*/
+}
+
+
+.exp{
+    padding: 20px 0;
+}
+.exp ul{
+    margin-top: 20px;
+}
+.exp ul li{
+    margin: 0 0 20px 24px;
+}
