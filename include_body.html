@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-
 <html>
 
-<!-- ******HEADER****** -->
 <head>
 <style>
 .topnav {
@@ -13,7 +11,6 @@
     float: right;
     margin-top: 20px;
 }
-
 
 .topnav ul {
     display: flex;
@@ -34,12 +31,13 @@
 </style>
 </head>
 
+<body>   <!-- ✅ ADD THIS -->
 
 <header class="header">
     <div class="container">
         <div class="row">
 
-            <!-- LEFT SIDE -->
+            <!-- LEFT -->
             <div class="col-sm-12 col-md-6 col-lg-6" style="display:flex; align-items:center;">
                 
                 <img src="assets/Karnish.jpeg" width="140" 
@@ -57,17 +55,14 @@
 
             </div>
 
-            <!-- RIGHT SIDE (NAVBAR) -->
+            <!-- RIGHT -->
             <div class="col-sm-12 col-md-6 col-lg-6">
 
                 <div class="topnav">
                     <ul>
                         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-
                         <li><a href="#"><i class="fa fa-search"></i> Research</a></li>
-
                         <li><a href="#"><i class="fa fa-edit"></i> Teaching</a></li>
-
                         <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
@@ -82,53 +77,12 @@
     </div>
 </header>
 
-
 <script>
     function toggleMode() {
-        document.body.classList.toggle('night-mode'); // Toggle night mode class on body
+        document.body.classList.toggle('night-mode');
     }
-
-    const names = [
-        "Karnish Tapadar",
-        "कार्निश तपादार ",
-        "কার্নিশ তাপাদার ",
-        "কাৰ্নিশ তাপদাৰ",
-    ];
-
-    const intro = "Dr. ";
-    let currentIndex = 0;
-    let currentLetterIndex = 0;
-    let intervalId;
-
-    function startTyping() {
-        let nameElement = document.querySelector('.name');
-        if (currentLetterIndex < names[currentIndex].length) {
-            nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex + 1);
-            currentLetterIndex++;
-        } else {
-            clearInterval(intervalId);
-            setTimeout(() => {
-                intervalId = setInterval(deleteName, 50);
-            }, 1000);
-        }
-    }
-
-    function deleteName() {
-        let nameElement = document.querySelector('.name');
-        if (currentLetterIndex > 0) {
-            nameElement.textContent = intro + names[currentIndex].substring(0, currentLetterIndex);
-            currentLetterIndex--;
-        } else {
-            clearInterval(intervalId);
-            currentIndex = (currentIndex + 1) % names.length;
-            currentLetterIndex = 0;
-            intervalId = setInterval(startTyping, 100);
-        }
-    }
-
-    intervalId = setInterval(startTyping, 100); // Start typing
 </script>
 
-
+</body>   <!-- ✅ ADD THIS -->
 
 </html>
