@@ -3,15 +3,45 @@
 <html>
 
 <!-- ******HEADER****** -->
+<head>
+<style>
+.topnav {
+    background-color: #cfd8cc;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
 
+.topnav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.topnav ul li {
+    list-style: none;
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1a73e8;
+    font-weight: 500;
+}
+</style>
+</head>
 
 <header class="header">
     <div class="container">
 
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <img class="profile-image img-responsive pull-left" src="assets\Karnish.jpeg" alt="Karnish Tapadar" width="140" height="165" />
-                <div class="profile-content pull-left">
+                 <!--<img class="profile-image img-responsive pull-left" src="assets\Karnish.jpeg" alt="Karnish Tapadar" width="140" height="165" /> -->
+                <img class="profile-image img-responsive" src="assets/Karnish.jpeg" alt="Karnish Tapadar" width="140" style="border-radius: 50%; margin-right: 20px;">
+                <!-- <div class="profile-content pull-left">-->
+                <div class="profile-content" style="display:inline-block;"></div>
                     <h2 class="name">Dr. Karnish Tapadar</h2>
                     <h5 class="desc">
                         
@@ -43,9 +73,11 @@
                 </div>
                 <!--//profile-->
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <nav class="navbar  navbar-static-top" role="navigation">
-                    <div class="profile-content pull-right"></div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-6">-->
+            <div class="col-sm-12 col-md-6 col-lg-6" style="display:flex; align-items:center;"></div>
+                 <!--<nav class="navbar  navbar-static-top" role="navigation">-->
+                <nav style="width:100%;"></nav>
+                     <!--<div class="profile-content pull-right"></div>-->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: #178ACC;">
 						<span class="sr-only" style="background-color: white;">Toggle navigation</span>
