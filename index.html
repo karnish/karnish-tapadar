@@ -34,24 +34,26 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="jquery.js"></script> -->      
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="jquery.js"></script> 
 
     <script>
         $(function() {
             $("#include_header").load("include_header.html");
         });
 
-        $(function() {
-            $("#include_body").load("include_body.html");
-        });
-
-        $(function() {
-            $("#include_footer").load("include_footer.html");
-        });
-
-        $(function() {
-            $("#include_footer_scripts").load("include_footer_scripts.html");
-        });
+         </script> 
+    
+    <script src="jquery.js"></script> 
+		    <script> 
+		    $(function(){
+		      $("#includedMyFooter").load("include_body.html"); 
+		    });
+    </script>
+    <script src="jquery.js"></script> 
+		    <script> 
+		    $(function(){
+		      $("#includedMyFooter").load("include_footer.html"); 
+		    });
     </script>
     
     <script src="jquery.js"></script> 
@@ -130,42 +132,48 @@ gtag('config', 'G-MKXQD3MXWW');
 
 <body>
     
-    <!-- ******HEADER IMPORT CODE END****** -->
+     <header class="header">
+	 <div id="include_header"></div>
+    </header><!--//header-->
+
+	
+    <div class="container sections-wrapper">
+        <div class="row">
+           <div class="primary col-md-8 col-sm-12 col-xs-12">  
+	      
+                <section class="about section">
+                    <div class="section-inner-index">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content" >
+
+
+    <!-- ******HEADER IMPORT CODE END****** ****I commented
     <div id="include_header"></div>
     <div id="include_body"></div>
     <div id="loading">	
         <img id="loading-image" src="assets/loading.gif" alt="Loading..." width="100" height="100" />
-      </div>
-          
+      </div> -->
 
-
-
+    <!--
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner-index" id="abt">
                         <h2 class="heading">About Me</h2>
-                        <div class="content">
+                        <div class="content"> -->
                             <p>Hi! I am <a href="https://karnish-tapadar.github.io/" target="_blank">Karnish Tapadar</a>, currently serving as an Assistant Professor in the Department of Computer Science and Engineering at Shiv Nadar Institution of Eminence. I earned my Ph.D. in Computer Science and Engineering from the <a href="https://www.iitg.ac.in" target="_blank">Indian Institute of Technology Guwahati</a>, India. Prior to that, I completed my M.Tech. in Computer Science and Engineering from the <a href="https://nitdgp.ac.in/" target="_blank">National Institute of Technology Durgapur</a>, India, where I was awarded the Institute Gold Medal.
                             </p>
 
                             <!--<p>My current research interests include Internet of Things (IoT) / Wireless Sensor Networks / Performance Evaluation of IoT Protocols.</p> -->
 
 
-                        </div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </section>
-                <!--//section-->
-
-
-
-                </section>
-                <!--//section-->
-            </div>
-            <!--//primary-->
+                                  </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+      
+</section><!--//section-->		   
+</div><!--//primary-->
 
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                <aside class="info aside section">
