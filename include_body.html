@@ -27,7 +27,14 @@
                 <div class="topnav">
                     <ul>
                         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="#"><i class="fa fa-search"></i> Research</a></li>
+                        <li class="dropdown">
+    <a href="#"><i class="fa fa-search"></i> Research ▾</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</li>
                         <li><a href="#"><i class="fa fa-edit"></i> Teaching</a></li>
                         <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact Me</a></li>
                     </ul>
@@ -78,6 +85,47 @@
 
 .topnav ul li a:hover {
     color: green !important;
+    
+}
+
+/* dropdown parent */
+.topnav ul li {
+    position: relative;
+}
+
+/* dropdown hidden */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30px;
+    left: 0;
+    padding: 8px 0;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* dropdown items */
+.dropdown-menu li {
+    display: block;
+    padding: 5px 15px;
+}
+
+/* dropdown links */
+.dropdown-menu li a {
+    color: #333;
+    font-size: 14px;
+}
+
+/* hover effect */
+.dropdown-menu li a:hover {
+    background: #f1f1f1;
+}
+
+/* show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 </style>
 
