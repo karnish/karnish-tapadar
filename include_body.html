@@ -78,16 +78,18 @@
 </style>
 
 <script>
+document.addEventListener("DOMContentLoaded", function() {
+
     const links = document.querySelectorAll('.topnav ul li a');
 
     links.forEach(link => {
         link.addEventListener('click', function() {
 
-            // remove active from all
             links.forEach(l => l.classList.remove('active'));
-
-            // add active to clicked one
             this.classList.add('active');
+
         });
     });
+
+});
 </script>
