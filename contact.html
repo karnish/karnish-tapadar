@@ -97,19 +97,32 @@
                 background-color: #338BA8;
             }
 
-            .office-img {
+         
+         .office-img {
     width: 100%;
-    max-width: 250px;
+    max-width: 260px;
+    border-radius: 10px;
     margin-top: 10px;
+    transition: 0.3s;
+}
+
+.office-img:hover {
+    transform: scale(1.05);
 }
 
 .research-card {
-    background: #f5f5f5;
+    background: #f8f9fa;
     padding: 25px;
     border-radius: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 15px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+/* spacing improvement */
+.research-card p {
+    line-height: 1.6;
+}
+         
         </style>
 
 
@@ -133,67 +146,76 @@
         
         
         
+<div class="container sections-wrapper">
 
-        <div class="research-card">
-
-    <div class="row">
-
-        <!-- LEFT: OFFICE DETAILS -->
-        <div class="col-md-6">
-
-            <h4 style="color:maroon;"><b>Current Office Address</b></h4>
-
-            <p>
-                Block B, Cabin-218, Second floor <br>
-                Department of Computer Science and Engineering<br> 
-                Shiv Nadar University, NH -91, Tehsil Dadri, Gautam Buddha Nagar, UP, 201314,  India
-            </p>
-
-            <p><b>Emails:</b></p>
-
-            <div><img src="assets/outlook.png" width="20"> karnish.tapadar@snu.edu.in</div>
-            <div><img src="assets/gmail.png" width="20"> tapadarkarnish1011@gmail.com</div>
-
-        </div>
-
-        <!-- RIGHT: IMAGE -->
-        <div class="col-md-6 text-center">
-
-            <img src="assets/snu.jpg" alt="SNU" class="office-img">
-
-        </div>
-
-    </div>
-
-</div>
-
-<div class="research-card">
+    <h2 class="heading">Contact Me</h2>
 
     <div class="row">
+        <div class="col-md-12">
 
-        <div class="col-md-6">
+            <!-- ===== OFFICE 1 ===== -->
+            <div class="research-card">
 
-            <h4 style="color:maroon;"><b>PhD Lab Address</b></h4>
+                <div class="row">
 
-            <p>
-                IoT Applications and Networks (IO-neT) Lab <br>
-                HWS-011 (Ground floor)<br>
-                Department of Computer Science and Engineering<br> 
-                Indian Institute of Technology Guwahati, India
-            </p>
-             <p><b>Emails:</b></p>
+                    <div class="col-md-6">
+                        <h4 style="color:maroon;">
+                            <i class="fa fa-map-marker"></i> <b>Current Office Address</b>
+                        </h4>
 
-            <div><img src="assets/outlook.png" width="20"> karnish_nasrin@alumni.iitg.ac.in</div>
-            <div><img src="assets/gmail.png" width="20"> tapadarkarnish1011@gmail.com</div>
+                        <p>
+                            Block B, Cabin-B218B, Second floor <br>
+                            Department of Computer Science and Engineering<br> 
+                            Shiv Nadar University, NH -91, Tehsil Dadri, Gautam Buddha Nagar, UP, 201314,  India
+                            Extn: 277 <br>
+                        </p>
+
+                        <p><b style="color:#1a73e8;">Emails:</b></p>
+
+                        <div><i class="fa fa-envelope"></i> <a href="mailto:karnish.tapadar@snu.edu.in">karnish.tapadar@snu.edu.in</a></div>
+                        <div><i class="fa fa-envelope"></i> tapadarkarnish1011@gmail.com</div>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img src="assets/snu.jpg" class="office-img">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ===== OFFICE 2 ===== -->
+            <div class="research-card">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h4 style="color:maroon;">
+                            <i class="fa fa-university"></i> <b>PhD Lab Address</b>
+                        </h4>
+
+                        <p>
+                            IoT Applications and Networks (IO-neT) Lab <br>
+                            HWS-011 (Ground floor)<br>
+                            Department of Computer Science and Engineering<br> 
+                            Indian Institute of Technology Guwahati, India
+                        </p>
+
+                        <p><b style="color:#1a73e8;">Emails:</b></p>
+
+                        <div><i class="fa fa-envelope"></i> karnish_nasrin@alumni.iitg.ac.in</div>
+                        <div><i class="fa fa-envelope"></i> tapadarkarnish1011@gmail.com</div>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img src="assets/IITG.jpeg" class="office-img">
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
-        <div class="col-md-6 text-center">
-
-            <img src="assets/IITG.jpeg" class="office-img">
-
-        </div>
-
     </div>
 
 </div>
