@@ -57,7 +57,38 @@
                 });	
     </script> 
 
+<style>
+    .research-card {
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 5px solid #1a73e8;
+}
 
+/* custom table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th {
+    background: #1a73e8;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.custom-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
 
     <!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MKXQD3MXWW"></script>
@@ -74,66 +105,94 @@
 </head>
 
 <body>
-   <!--
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-12 col-sm-12 col-xs-12">
-                <section class="section-inner" id="wt">
-                    <h2 class="heading">Students</h2>
-			    <style>
-			        table {
-			            border-collapse: collapse;
-			            width: 100%;
-			        }
-			        th, td {
-			            border: 1px solid #ccc;
-			            padding: 8px;
-			            text-align: left;
-			        }
-			        tr:nth-child(even) {
-			            background-color: #f2f2f2; /* Color for even rows */
-			        }
-			    </style>	
+  
+
+<div class="container sections-wrapper">
+    <div class="row">
+        <div class="primary col-md-12 col-sm-12 col-xs-12">
+
+            <section class="about section">
+                <div class="section-inner">
+
+                    <h2 class="heading" style="color: maroon;">Students</h2>
+
                     <div class="content">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <tr>
-                                    <th>Student Name</th>
-                                    <th>Institute</th>
-                                    <th>Degree</th>
-                                    <th>Year</th>
-				    <th>Outcome</th>	
-                                </tr>
-                                <tr>
-                                    <td>Valencia Sebastiani</td>
-                                    <td>National University of Singapore, Singapore</td>
-                                    <td>MSc</td>
-                                    <td>2022-2023</td>
-				    <td>IEEE FNWF 2023</td>	
-                                </tr>
-                                <tr>
-                                    <td>Joshi Poorvi</td>
-                                    <td>National University of Singapore, Singapore</td>
-                                    <td>MSc</td>
-                                    <td>2023-2024</td>
-				    <td>IEEE VTC 2024</td>	
-                                </tr>
-                                <tr>
-                                    <td>Wu Xiaoke</td>
-                                    <td>National University of Singapore, Singapore</td>
-                                    <td>MSc</td>
-                                    <td>2023-2024</td>
-				    <td>-</td>	
-                                </tr>
-                               Add more student details here as needed 
-                            </table>
+
+                        <!-- ===== PhD Students ===== -->
+                        <div class="research-card">
+
+                            <h4 style="color:#1a73e8;"><b>PhD Students</b></h4>
+
+                            <div class="table-responsive">
+                                <table class="table custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>SL No</th>
+                                            <th>Name</th>
+                                            <th>Institute</th>
+                                            <th>Research Topic</th>
+                                            <th>Duration of Work</th>
+                                            <th>Remarks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
+
+                        <!-- ===== OUR Students ===== -->
+                        <div class="research-card">
+
+                            <h4 style="color:#1a73e8;"><b>OUR Students</b></h4>
+
+                            <div class="table-responsive">
+                                <table class="table custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>SL No</th>
+                                            <th>Name</th>
+                                            <th>Project Topic</th>
+                                            <th>Year</th>
+                                            <th>Remarks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
                     </div>
-                </section>
-            </div>
+
+                </div>
+            </section>
+
         </div>
     </div>
-    -->
+</div>
+
+
+
+
+
  <!-- ******FOOTER****** --> 
  <div class="footer" id="include_footer"></div>
  <div id="include_footer_scripts"></div>
